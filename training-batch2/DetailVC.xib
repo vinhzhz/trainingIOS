@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailVC">
+            <connections>
+                <outlet property="btnBack" destination="fQe-yf-VA6" id="KRs-4I-UU9"/>
+                <outlet property="tableView" destination="0sY-Sq-lWf" id="cSp-Br-Izi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t1n-XF-q7n">
+                    <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQe-yf-VA6">
+                            <rect key="frame" x="8" y="7" width="55" height="30"/>
+                            <state key="normal" title="Quay lại"/>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="dBm-22-ebb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chi tiết" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dew-jg-KXy">
+                            <rect key="frame" x="133" y="11" width="54.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.54868899039999997" green="1" blue="0.72201235659999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="fQe-yf-VA6" firstAttribute="leading" secondItem="t1n-XF-q7n" secondAttribute="leading" constant="8" id="Fat-xW-n0l"/>
+                        <constraint firstItem="fQe-yf-VA6" firstAttribute="centerY" secondItem="t1n-XF-q7n" secondAttribute="centerY" id="TY4-zx-dQB"/>
+                        <constraint firstAttribute="height" constant="44" id="fSS-zf-MI9"/>
+                        <constraint firstItem="dew-jg-KXy" firstAttribute="centerX" secondItem="t1n-XF-q7n" secondAttribute="centerX" id="gBQ-63-McW"/>
+                        <constraint firstItem="dew-jg-KXy" firstAttribute="centerY" secondItem="t1n-XF-q7n" secondAttribute="centerY" id="t6L-Yx-4FC"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0sY-Sq-lWf">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="t1n-XF-q7n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1ih-Yz-7ei"/>
+                <constraint firstItem="0sY-Sq-lWf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2FO-tg-flp"/>
+                <constraint firstItem="0sY-Sq-lWf" firstAttribute="top" secondItem="t1n-XF-q7n" secondAttribute="bottom" id="F0m-oq-23i"/>
+                <constraint firstAttribute="trailing" secondItem="t1n-XF-q7n" secondAttribute="trailing" id="OtC-dI-EvX"/>
+                <constraint firstItem="t1n-XF-q7n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="PDn-Ob-SBm"/>
+                <constraint firstAttribute="trailing" secondItem="0sY-Sq-lWf" secondAttribute="trailing" id="r8e-8l-uj9"/>
+                <constraint firstAttribute="bottom" secondItem="0sY-Sq-lWf" secondAttribute="bottom" id="wLJ-28-GjB"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

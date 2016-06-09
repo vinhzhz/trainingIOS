@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartVC">
+            <connections>
+                <outlet property="btnStart" destination="jpT-Bw-5ay" id="YGh-Ie-wHi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpT-Bw-5ay">
+                    <rect key="frame" x="112" y="266" width="96" height="36"/>
+                    <color key="backgroundColor" red="0.95870827879999998" green="0.89589188549999998" blue="0.20370660630000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="TRAINING"/>
+                    <connections>
+                        <action selector="onStart:" destination="-1" eventType="touchUpInside" id="1dx-dK-DIS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.50970634159999995" green="1" blue="0.94552867340000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="jpT-Bw-5ay" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CAO-6o-Tq2"/>
+                <constraint firstItem="jpT-Bw-5ay" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ckV-AH-gl7"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

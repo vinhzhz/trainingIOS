@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayVC">
+            <connections>
+                <outlet property="btnBack" destination="Xu7-Ee-jbb" id="lFH-Xb-vN7"/>
+                <outlet property="btnNext" destination="iLF-JS-RMd" id="E57-ZY-2GX"/>
+                <outlet property="tableView" destination="2TN-EW-ZTG" id="67P-EK-OSm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bqf-pb-SdQ">
+                    <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xu7-Ee-jbb">
+                            <rect key="frame" x="21" y="7" width="55" height="30"/>
+                            <state key="normal" title="Quay lại"/>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="r60-mv-4KV"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanh Toán" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaX-Jg-Bhx">
+                            <rect key="frame" x="115" y="11" width="90" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.62354722429999998" blue="0.7378929031" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="iaX-Jg-Bhx" firstAttribute="centerY" secondItem="Bqf-pb-SdQ" secondAttribute="centerY" id="84u-hT-EYt"/>
+                        <constraint firstItem="Xu7-Ee-jbb" firstAttribute="leading" secondItem="Bqf-pb-SdQ" secondAttribute="leading" constant="21" id="86d-tR-yD5"/>
+                        <constraint firstAttribute="height" constant="44" id="Y4B-t4-IFQ"/>
+                        <constraint firstItem="iaX-Jg-Bhx" firstAttribute="centerX" secondItem="Bqf-pb-SdQ" secondAttribute="centerX" id="pad-OH-CvE"/>
+                        <constraint firstItem="Xu7-Ee-jbb" firstAttribute="centerY" secondItem="Bqf-pb-SdQ" secondAttribute="centerY" id="swW-IB-KfM"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2TN-EW-ZTG">
+                    <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLF-JS-RMd">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.62354722429999998" blue="0.7378929031" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ISI-TL-Bks"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Tiếp Theo"/>
+                    <connections>
+                        <action selector="onNext:" destination="-1" eventType="touchUpInside" id="ARR-Gp-vJ4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2TN-EW-ZTG" firstAttribute="top" secondItem="Bqf-pb-SdQ" secondAttribute="bottom" id="LEv-9j-JVp"/>
+                <constraint firstItem="2TN-EW-ZTG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mth-HV-rsd"/>
+                <constraint firstAttribute="trailing" secondItem="2TN-EW-ZTG" secondAttribute="trailing" id="Nhj-d4-59g"/>
+                <constraint firstItem="iLF-JS-RMd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RMB-vH-sWo"/>
+                <constraint firstAttribute="trailing" secondItem="iLF-JS-RMd" secondAttribute="trailing" id="RxN-OL-FI3"/>
+                <constraint firstAttribute="trailing" secondItem="Bqf-pb-SdQ" secondAttribute="trailing" id="UiK-rA-UoT"/>
+                <constraint firstAttribute="bottom" secondItem="iLF-JS-RMd" secondAttribute="bottom" id="c7E-8E-jfT"/>
+                <constraint firstItem="Bqf-pb-SdQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e6W-vP-xok"/>
+                <constraint firstItem="Bqf-pb-SdQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="u6p-jh-nrJ"/>
+                <constraint firstItem="iLF-JS-RMd" firstAttribute="top" secondItem="2TN-EW-ZTG" secondAttribute="bottom" id="yD4-2c-8O6"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

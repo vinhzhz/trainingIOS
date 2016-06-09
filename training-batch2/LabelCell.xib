@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="LabelCellID" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="LabelCell">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-rM-Wim">
+                        <rect key="frame" x="8" y="8" width="356" height="50.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BbG-rM-Wim" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="D2w-yY-GiV"/>
+                    <constraint firstItem="BbG-rM-Wim" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Rzf-np-zwx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BbG-rM-Wim" secondAttribute="trailing" id="WiJ-mf-dEk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BbG-rM-Wim" secondAttribute="bottom" id="lPg-Bo-vMh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Title" destination="BbG-rM-Wim" id="T5W-qS-f51"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="392.5"/>
+        </tableViewCell>
+    </objects>
+</document>

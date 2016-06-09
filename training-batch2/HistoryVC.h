@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HistoryVC.h
 //  training-batch2
 //
 //  Created by VinhHV on 6/9/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HistoryVC : UIViewController
 
 @end
-
